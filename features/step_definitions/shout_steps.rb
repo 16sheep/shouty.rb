@@ -19,6 +19,10 @@ When('Sean shouts') do
   @shouty.shout("Sean", ARBITRARY_MESSAGE)
 end
 
+When('Sean whispers') do
+  @shouty.shout("Sean", ARBITRARY_MESSAGE)
+end
+
 Then('Lucy should hear Sean') do
   expect(@shouty.shouts_heard_by("Lucy").size).to eq(1)
 end
