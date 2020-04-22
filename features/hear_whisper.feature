@@ -1,4 +1,4 @@
-Feature: Hear whisper
+Feature: Feature file change
 
   Whispers have a range up to 10m
 
