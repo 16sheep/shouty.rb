@@ -14,10 +14,10 @@ class Shouty
     @locations[person] = location
   end
 
-  def shout(person, _shout)
+  def shout(person, shout)
     @shouts[person] = [] unless @shouts.key?(person)
 
-    @shouts[person]
+    @shouts[person].push(shout)
   end
 
   def shouts_heard_by(listener)
