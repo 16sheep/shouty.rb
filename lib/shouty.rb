@@ -11,6 +11,6 @@ class Shouty
       shoutsHeard[shouter] = shouts if distance < MESSAGE_RANGE
     end
 
-    shoutsHeard
+    shoutsHeardFarAway
   end
 end
