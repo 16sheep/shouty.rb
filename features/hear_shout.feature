@@ -13,3 +13,9 @@ Feature: Hear Shout
       And Sean is at 800, 800
       When Sean shouts
       Then Lucy should hear nothing
+
+    Scenario: Lucy is hears "troulululu"
+      Given Lucy is at 0, 0
+      And Sean is at 0, 900
+      When Sean shouts
+      Then Lucy should hear Sean
