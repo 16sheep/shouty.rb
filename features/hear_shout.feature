@@ -16,6 +16,4 @@ Feature: Range
 
   Scenario: Out of range shout may or may not be heard
     Given Lucy is at 0, 0
-    And Sean is at 800, 800
-    When Sean shouts
-    Then Lucy should hear nothing
+ 
