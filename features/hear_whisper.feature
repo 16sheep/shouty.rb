@@ -1,1 +1,1 @@
-Feature: Feature file has 
+Feature
