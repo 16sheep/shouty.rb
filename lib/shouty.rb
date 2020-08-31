@@ -21,13 +21,11 @@ class Shouty
   end
 
   def shouts_heard_by(listener)
-    shoutsHeard = {}
+    whispersHeard = {}
 
-    @shouts.each do |shouter, shouts|
+    @shouts.each do |shouter, whispers|
       distance = @locations[listener].distance_from(@locations[shouter])
-      if (distance < MESSAGE_RANGE)
-        shoutsHeard[shouter] = shouts
-      end
+      shoutsHeard[shouter] = whispers if distance < MESSAGE_RANGE
     end
 
     shoutsHeard
